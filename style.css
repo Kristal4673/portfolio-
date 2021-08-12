@@ -1,0 +1,69 @@
+header{ 
+  display:flex; 
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-between; 
+  padding: 15px 5px;
+ background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+
+header h1{
+  margin-left: 15px;
+}
+
+nav{
+  display:flex; 
+  flex-direction:row; 
+  flex-wrap:wrap; 
+  margin-right: 10px;
+
+}
+nav a{
+  text-decoration: none;
+}
+
+
+h1 {
+  PAdding 
+  font-size: 100px;
+  color: Pink;
+}
+body {
+  padding: 20px;
+  margin: 15px;
+  background-color: white;
+  color: rgb(134, 72, 18);
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* flex parent */
+.page-selection{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+/* moblie-first column for the smallest screen size */
+.card-column {
+flex: 1 0 100%;
+}
+/* medium screens / tablets */
+@media screen and (min-width: 768px) {
+/* on tablets, set columns to only be 50% of the width and not grow*/
+.card-column {
+flex: 0 0 50%;
+max-width: 50%;
+}
+}
+/* Largest screens */
+@media screen and (min-width: 992px) {
+.card-column {
+flex: 0 0 33.3333%;
+max-width: 33.333%;
+}
+}

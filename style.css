@@ -31,14 +31,47 @@ nav {
 
 nav a {
   text-decoration: none;
+  color: #666662;
 }
 
 .hero-banner {
-  background-image:url("https://thumbs.dreamstime.com/b/magenta-violet-simple-very-discreet-elegant-banner-background-texture-backlighting-backdrop-web-printing-203630001.jpg");
+  background-image: url("https://thumbs.dreamstime.com/b/magenta-violet-simple-very-discreet-elegant-banner-background-texture-backlighting-backdrop-web-printing-203630001.jpg");
   background-color: #cccccc;
-    opacity: 50%;
-    padding:15px 5px;
-    margin: auto 0;
+  color: #8e9eab;
+  opacity: 50%;
+  padding: 15px 5px;
+  border: none;
+  margin-right: 10px;
+}
+article h2{
+  color:#8c6f99; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+article {
+  background-color:#fdf6bf; 
+  padding: 15px 10px; 
+  margin: auto 0; 
+}
+article div{
+   color: #8e9eab;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.projects {
+  display: flex;
+  color:#7b6884; 
+  flex-direction: flex-start;
+  justify-content: flex-start;
+}
+
+main h2 {
+  background-image: url("https://unsplash.com/photos/aSOcGOtXW44");
+  background-color: none;
+  color: #7b6884;
+  opacity: 100%;
+  padding: 15px 5px;
+  border: dashed #7b6884;
+  margin-right: 10px;
 }
 
 body {
@@ -49,7 +82,7 @@ body {
 }
 
 /* flex parent */
-.page-selection {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

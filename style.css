@@ -83,7 +83,7 @@ nav a {
   margin-right: 10px;
 }
 article h2 {
-  color: #8c6f99;
+  color: #7b6884;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 article {
@@ -92,7 +92,7 @@ article {
   margin: auto 0;
 }
 article div {
-  color: #8e9eab;
+  color: #7b6884;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .projects {
@@ -103,11 +103,11 @@ article div {
   justify-content: flex-start;
 }
 
-main h2 {
-  background-image: url("https://unsplash.com/photos/aSOcGOtXW44");
+.contact ul{
+  background-image: url("https://unsplash.com/photos/aSOcGOtXW44?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink");
   background-color: none;
   color: #7b6884;
-  opacity: 100%;
+  opacity: 50%;
   padding: 15px 5px;
   border: dashed #7b6884;
   margin-right: 10px;
@@ -116,7 +116,7 @@ main h2 {
 body {
   padding: 20px;
   margin: 15px;
-  background-color: white;
+  background-color: rgb(194, 192, 233);
   color: rgb(134, 72, 18);
 }
 

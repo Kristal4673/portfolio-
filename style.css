@@ -1,3 +1,41 @@
+
+element.style {
+}
+.box-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* min-height: 100%; */
+    padding: 2rem;
+    color: var(--primary-color);
+    outline: 2px hidden var(--gin);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+body {
+    background: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+
+:root {
+    --primary-color: antiquewhite;
+    --accent-color: red;
+    --outer-space: #33393f;
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --glow: gold;
+    --background-color: rgb(26, 26, 26);
+}
 header {
   display: flex;
   flex-direction: row;
@@ -34,6 +72,7 @@ nav a {
   color: #666662;
 }
 
+
 .hero-banner {
   background-image: url("https://thumbs.dreamstime.com/b/magenta-violet-simple-very-discreet-elegant-banner-background-texture-backlighting-backdrop-web-printing-203630001.jpg");
   background-color: #cccccc;
@@ -43,23 +82,23 @@ nav a {
   border: none;
   margin-right: 10px;
 }
-article h2{
-  color:#8c6f99; 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+article h2 {
+  color: #8c6f99;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 article {
-  background-color:#fdf6bf; 
-  padding: 15px 10px; 
-  margin: auto 0; 
+  background-color: #fdf6bf;
+  padding: 15px 10px;
+  margin: auto 0;
 }
-article div{
-   color: #8e9eab;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+article div {
+  color: #8e9eab;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .projects {
   display: flex;
-  color:#7b6884; 
+  color: #7b6884;
+  flex: wrap;
   flex-direction: flex-start;
   justify-content: flex-start;
 }
@@ -81,27 +120,53 @@ body {
   color: rgb(134, 72, 18);
 }
 
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;}
+
+  .one{
+  display: flex; 
+  flex-wrap:wrap;
+  flex-grow:2;
+}  
+    .three{
+  display: flex; 
+  flex-direction: 2 column;
+}
+.two{
+  display: flex; 
+  flex-direction: 2 column;
+}
+
 /* flex parent */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: 3 row;
+  justify-content: space-evenly;
 }
 /* moblie-first column for the smallest screen size */
-.card-column {
+.flex-item {
   flex: 1 0 100%;
 }
 /* medium screens / tablets */
 @media screen and (min-width: 768px) {
   /* on tablets, set columns to only be 50% of the width and not grow*/
-  .card-column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+  
+    .flex-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
 }
 /* Largest screens */
 @media screen and (min-width: 992px) {
-  .card-column {
+  .-column {
     flex: 0 0 33.3333%;
     max-width: 33.333%;
   }

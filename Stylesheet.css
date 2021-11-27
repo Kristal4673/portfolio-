@@ -1,10 +1,10 @@
 :root {
-    --primary-color: rgb(230, 175, 104);
-    --accent-color: rgb(151, 47, 134);
+    --primary-color: rgb(87, 85, 83);
+    --accent-color: rgb(218, 184, 212);
     --outer-space: #33393f;
     --bright-turquoise: #2aefcb;
     --gin: #e0eae4;
-    --glow: gold;
+    --glow: rgb(223, 213, 158);
     --background-color: rgb(26, 26, 26);
 }
 * {
@@ -12,6 +12,18 @@
   padding: 5 10;
   margin: 4 5;
   color: var(--primary-color);
+}
+article{ 
+
+Padding: 10px; 
+margin:5px; 
+
+}
+p{
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  Padding: 2%; 
+  margin:1%; 
 }
 .cards {
   display: flex;
@@ -43,7 +55,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 5px;
-  background: #8e9eab; /* fallback for old browsers */
+  background:rgb(87, 85, 83); /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
     #eef2f3,

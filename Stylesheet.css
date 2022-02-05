@@ -1,11 +1,9 @@
 :root {
-    --primary-color: rgb(87, 85, 83);
-    --accent-color: rgb(218, 184, 212);
-    --outer-space: #33393f;
-    --bright-turquoise: #2aefcb;
-    --gin: #e0eae4;
-    --glow: rgb(223, 213, 158);
-    --background-color: rgb(26, 26, 26);
+    --primary-color:rgb(233, 235, 248); 
+     
+}
+html{
+  background-color: rgb(165, 162, 153);
 }
 * {
   box-sizing: border-box;
@@ -16,13 +14,14 @@
 article{ 
 
 Padding: 10px; 
-margin:auto; 
-background-color: rgb(223,195,211); 
+margin:auto 0; 
+background-color: rgb(141, 129, 140); 
 border: 2px solid black;
 border-radius: 5px;
 
 }
 article.hover {
+  cursor: pointer;
   
 }
 p{
@@ -39,8 +38,8 @@ p{
 .card {
   width: 46%;
   margin: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(141, 129, 140);
+  box-shadow: 2px 2px 6px 0px rgba(233, 235, 248);
 }
 .card img {
   max-width: 100%;
@@ -61,16 +60,18 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 5px;
-  background:rgb(87, 85, 83); /* fallback for old browsers */
+  background:rgb(141, 129, 140); /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to bottom,
-    #eef2f3,
-    #8e9eab
-  ); /* Chrome 10-25, Safari 5.1-6 */
+    to top,
+  black,
+    rgb(141, 129, 140)
+  ); 
+  
+  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
-    #eef2f3,
-    #8e9eab
+    rgb(black),
+    rgb(141, 129, 140)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .card:nth-child(1) {
